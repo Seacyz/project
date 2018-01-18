@@ -18,6 +18,18 @@
 				font: "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
 			}
 			
+			.fix {
+				zoom: 1;
+			}
+			
+			.fix:after {
+				display: block;
+				content: 'clear';
+				clear: both;
+				line-height: 0;
+				visibility: hidden;
+			}
+			
 			header {
 				position: relative;
 				height: 72px;
@@ -236,18 +248,63 @@
 			}
 			
 			.actualCombat-content {
-				/*width: 1152px;*/
+				width: 1152px;
 				margin: 0 auto;
 			}
 			
-			.actualCombat-content li {
+			.actualCombat-tiem {
 				float: left;
 				display: inline-block;
 				height: 252px;
 				width: 216px;
-				margin-left: 18px;
 				margin-bottom: 12px;
-				border: 1px solid #888;
+				margin-left: 18px;
+			}
+			
+			.actualCombat-tiem:nth-child(1) {
+				margin-left: 0px;
+			}
+			
+			.actualCombat-itemimg {
+				width: 216px;
+				height: 120px;
+				border-radius: 8px;
+			}
+			
+			.actualCombat-item-bottom {
+				padding: 12px 8px;
+			}
+			
+			.actualCombat-itemtitle {
+				font-size: 16px;
+				color: #07111B;
+				font-weight: 400;
+				line-height: 24px;
+				display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+			}
+			
+			.actualCombat-item-bottom li {
+				display: inline-block;
+				font-size: 12px;
+				color: #93999F;
+				line-height: 24px;
+				margin-top: 8px;
+				font-weight: 400;
+				margin-right: 12px;
+			}
+			
+			.actualCombat-item-bottom li:nth-child(4) {
+				margin-right: 0px;
+			}
+			
+			.actualCombat-itemprice {
+				font-size: 12px;
+				color: #4D555D;
+				line-height: 20px;
+				margin-top: 8px;
 			}
 		</style>
 		<title>慕课网</title>
@@ -360,15 +417,77 @@
 				<em>荐</em>
 				<span></span>
 			</h3>
-			<div class="actualCombat-content">
-				<li>1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
+			<div class="fix actualCombat-content">
+				<li class="actualCombat-tiem">
+					<img class="actualCombat-itemimg" src="image/actualCombat1.jpg" />
+					<div class="actualCombat-item-bottom">
+						<h3 class="actualCombat-itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+						<ul>
+							<li>实战</li>
+							<li>初级</li>
+							<li>2299</li>
+							<li>*****</li>
+						</ul>
+						<div class="actualCombat-itemprice">￥366.0</div>
+					</div>
+				</li>
+				<li class="actualCombat-tiem">
+					<img class="actualCombat-itemimg" src="image/actualCombat2.jpg" />
+					<div class="actualCombat-item-bottom">
+						<h3 class="actualCombat-itemtitle">Java企业级电商项目架构演进之路  Tomcat集群与Redis分布式</h3>
+						<ul>
+							<li>实战</li>
+							<li>初级</li>
+							<li>2299</li>
+							<li>*****</li>
+						</ul>
+						<div class="actualCombat-itemprice">￥366.0</div>
+					</div>
+				</li>
+				<li class="actualCombat-tiem">
+					<img class="actualCombat-itemimg" src="image/actualCombat3.jpg" />
+					<div class="actualCombat-item-bottom">
+						<h3 class="actualCombat-itemtitle">Java深入微服务原理改造房产销售平台</h3>
+						<ul>
+							<li>实战</li>
+							<li>初级</li>
+							<li>2299</li>
+							<li>*****</li>
+						</ul>
+						<div class="actualCombat-itemprice">￥366.0</div>
+					</div>
+				</li>
+				<li class="actualCombat-tiem">
+					<img class="actualCombat-itemimg" src="image/actualCombat4.jpg" />
+					<div class="actualCombat-item-bottom">
+						<h3 class="actualCombat-itemtitle">前端跳槽面试必备技巧</h3>
+						<ul>
+							<li>实战</li>
+							<li>初级</li>
+							<li>2299</li>
+							<li>*****</li>
+						</ul>
+						<div class="actualCombat-itemprice">￥366.0</div>
+					</div>
+				</li>
+				<li class="actualCombat-tiem">
+					<img class="actualCombat-itemimg" src="image/actualCombat5.jpg" />
+					<div class="actualCombat-item-bottom">
+						<h3 class="actualCombat-itemtitle">Spring Boot企业微信点餐系统</h3>
+						<ul>
+							<li>实战</li>
+							<li>初级</li>
+							<li>2299</li>
+							<li>*****</li>
+						</ul>
+						<div class="actualCombat-itemprice">￥366.0</div>
+					</div>
+				</li>
 			</div>
 		</section>
-		<section></section>
+		<section>
+			
+		</section>
 		<section></section>
 		<section></section>
 		<section></section>
