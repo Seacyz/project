@@ -9,12 +9,14 @@
 				padding: 0;
 				list-style: none;
 				text-decoration: none;
+				font-style: normal;
 			}
 			
 			html,
 			body {
 				height: 100%;
 				width: 100%;
+				min-width: 1300px;
 				font: "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
 			}
 			
@@ -215,6 +217,10 @@
 				line-height: 16px;
 			}
 			
+			.actualCombat {
+				box-shadow: 0 4px 8px 0 rgba(7, 17, 27, .1);
+			}
+			
 			.actualCombat-title {
 				text-align: center;
 				font-size: 14px;
@@ -281,9 +287,9 @@
 				font-weight: 400;
 				line-height: 24px;
 				display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 2;
-                overflow: hidden;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+				overflow: hidden;
 			}
 			
 			.actualCombat-item-bottom li {
@@ -305,6 +311,48 @@
 				color: #4D555D;
 				line-height: 20px;
 				margin-top: 8px;
+			}
+			
+			.newClass {
+				height: 100px;
+				box-shadow: 0 2px 4px 0 rgba(7, 17, 27, .06);
+				background-color: rgba(7, 17, 27, .03);
+			}
+			.newClass-content{
+				    width: 1152px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 36px 0 48px;
+			}
+			.newClass-title {
+				font-size: 14px;
+				color: #71777D;
+				line-height: 36px;
+				text-align: center;
+			}
+			
+			.newClass-title em {
+				font-size: 20px;
+				font-weight: 600;
+				color: #4D555D;
+				margin: 0 3px;
+			}
+			
+			.newClass-title span {
+				display: inline-block;
+				width: 56px;
+				height: 36px;
+				background-image: url(image/icon.png);
+				background-size: 100%;
+				vertical-align: bottom;
+			}
+			
+			.newClass-title span:nth-child(1) {
+				background-position: center -216px;
+			}
+			
+			.newClass-title span:nth-child(6) {
+				background-position: center -252px;
 			}
 		</style>
 		<title>慕课网</title>
@@ -485,8 +533,20 @@
 				</li>
 			</div>
 		</section>
-		<section>
-			
+		<section class="newClass">
+			<div class="newClass-content">
+			<h3 class="newClass-title">
+				<span></span>
+				<em>新</em>/
+				<em>上</em>/
+				<em>好</em>/
+				<em>课</em>
+				<span></span>
+			</h3>
+			<div>
+				
+			</div>
+			</div>
 		</section>
 		<section></section>
 		<section></section>
