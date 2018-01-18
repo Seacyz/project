@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<style type="text/css">
-			*{
+			* {
 				margin: 0;
 				padding: 0;
 				list-style: none;
 				text-decoration: none;
 			}
-			html,body{
+			
+			html,
+			body {
 				height: 100%;
 				width: 100%;
-				font:  "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+				font: "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
 			}
-			header{
+			
+			header {
 				position: relative;
 				height: 72px;
 				background-color: white;
-				box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
+				box-shadow: 0 4px 8px 0 rgba(7, 17, 27, .1);
 				padding: 0px 20px;
 				color: #71777d;
 			}
-			header img{
+			
+			header img {
 				height: 72px;
 				float: left;
 			}
 			
-			header ul{
+			header ul {
 				position: relative;
 				display: inline-block;
 				height: 72px;
 				line-height: 72px;
 				margin-left: 20px;
 			}
-			header li{
+			
+			header li {
 				display: inline-block;
-				margin:0 20px;
+				margin: 0 20px;
 				font-size: 16px;
-				
 			}
-			.header-search{
+			
+			.header-search {
 				width: 260px;
 				margin-left: 20px;
 				display: inline-block;
@@ -49,88 +55,102 @@
 				line-height: 48px;
 				margin-top: 12px;
 			}
-			.header-search-center{
+			
+			.header-search-center {
 				position: relative;
 			}
-			.header-tag{
+			
+			.header-tag {
 				display: inline-block;
 				font-size: 12px;
-				background-color:  #D9DDE1;
+				background-color: #D9DDE1;
 				border-radius: 12px;
 				height: 24px;
 				line-height: 24px;
 				padding: 0 12px;
 			}
-			.header-img:before{
-				
-			}
-			.header-right{
+			
+			.header-img:before {}
+			
+			.header-right {
 				float: right;
 				height: 72px;
 				line-height: 72px;
 			}
-			.header-right li{
+			
+			.header-right li {
 				margin: 0 10px;
 				font-size: 14px;
 				color: #71777d;
 			}
-			.header-right li:nth-child(2){
+			
+			.header-right li:nth-child(2) {
 				height: 40px;
 				line-height: 40px;
 				padding: 0 15px;
 				border-radius: 20px;
 				border: 1px solid #D9DDE1;
 			}
-			.banner{
+			
+			.banner {
 				width: 100%;
 				height: 476px;
 				background-color: #fff;
 			}
-			.banner-content{
+			
+			.banner-content {
 				margin: 20px auto;
 				width: 1152px;
 				height: 444px;
 				border: 1px solid #D9DDE1;
 				border-radius: 8px;
 				overflow: hidden;
-				box-shadow: 4px 12px 12px 0 rgba(7,17,27,.1);
+				box-shadow: 4px 12px 12px 0 rgba(7, 17, 27, .1);
 			}
-			.banner-content-left{
+			
+			.banner-content-left {
 				float: left;
 				width: 216px;
 				height: 100%;
 				background-color: #2b333b;
 			}
-			.banner-content-left ul{
+			
+			.banner-content-left ul {
 				display: block;
 				margin-left: 20px;
 				margin-top: 10px;
 			}
-			.banner-content-left li{
+			
+			.banner-content-left li {
 				height: 60px;
 				line-height: 60px;
 				padding: 0 10px 0 10px;
 			}
-			.banner-content-left li a{
+			
+			.banner-content-left li a {
 				display: inline-block;
 				height: 60px;
 				width: 100%;
 				cursor: default;
-				color: rgba(255,255,255,.7);
-			} 
-			.banner-content-right{
+				color: rgba(255, 255, 255, .7);
+			}
+			
+			.banner-content-right {
 				float: right;
 				width: 936px;
 				height: 100%;
 			}
-			.banner-content-right-banner{
+			
+			.banner-content-right-banner {
 				height: 316px;
 			}
-			.banner-content-right-bottom{
+			
+			.banner-content-right-bottom {
 				height: 128px;
 				padding: 0 18px;
 			}
-			.banner-content-right-bottom a{
+			
+			.banner-content-right-bottom a {
 				height: 100%;
 				width: 180px;
 				height: 128px;
@@ -138,22 +158,28 @@
 				cursor: default;
 				text-align: center;
 			}
-			.banner-web{
+			
+			.banner-web {
 				background-position: center 0 !important;
 			}
-			.banner-java{
+			
+			.banner-java {
 				background-position: center -72px !important;
 			}
-			.banner-android{
+			
+			.banner-android {
 				background-position: center -108px !important;
 			}
-			.banner-php{
+			
+			.banner-php {
 				background-position: center -36px !important;
 			}
-			.banner-ios{
+			
+			.banner-ios {
 				background-position: center -144px !important;
 			}
-			.banner-content-right-bottom i:nth-child(1){
+			
+			.banner-content-right-bottom i:nth-child(1) {
 				background: url(image/path_new.png) no-repeat;
 				display: inline-block;
 				width: 36px;
@@ -161,28 +187,77 @@
 				background-size: 100%;
 				margin-top: 22px;
 			}
-			.banner-content-right-bottom p:nth-child(2){
+			
+			.banner-content-right-bottom p:nth-child(2) {
 				font-size: 14px;
 				color: #07111b;
-				letter-spacing:1px;
+				letter-spacing: 1px;
 				margin-top: 4px;
 			}
-			.banner-content-right-bottom p:nth-child(3){
+			
+			.banner-content-right-bottom p:nth-child(3) {
 				font-size: 12px;
 				color: #93999F;
-                margin-top: 2px;
+				margin-top: 2px;
 				font-weight: 400;
 				line-height: 16px;
 			}
 			
+			.actualCombat-title {
+				text-align: center;
+				font-size: 14px;
+				color: #93999F;
+				line-height: 36px;
+			}
+			
+			.actualCombat-title span:nth-child(1) {
+				background-position: center -72px;
+			}
+			
+			.actualCombat-title span:nth-child(6) {
+				background-position: center -108px;
+			}
+			
+			.actualCombat-title span {
+				display: inline-block;
+				width: 56px;
+				height: 36px;
+				background-size: 100%;
+				background-image: url(image/icon.png);
+				vertical-align: bottom;
+			}
+			
+			.actualCombat-title em {
+				margin: 0 3px;
+				font-size: 22px;
+				font-weight: 600;
+				color: #4D555D;
+				font-style: normal;
+			}
+			
+			.actualCombat-content {
+				/*width: 1152px;*/
+				margin: 0 auto;
+			}
+			
+			.actualCombat-content li {
+				float: left;
+				display: inline-block;
+				height: 252px;
+				width: 216px;
+				margin-left: 18px;
+				margin-bottom: 12px;
+				border: 1px solid #888;
+			}
 		</style>
 		<title>慕课网</title>
 	</head>
+
 	<body>
 		<header>
 			<!--这个图片存在时候，如果不浮动，会影响下面的布局-->
 			<!--TODO-->
-			<img src="image/logo_new.png"/>
+			<img src="image/logo_new.png" />
 			<ul>
 				<li>免费课程</li>
 				<li>职业路径</li>
@@ -192,19 +267,19 @@
 			</ul>
 			<div class="header-search">
 				<div class="header-search-center">
-				<!--右浮动-->
-				<div class="header-tag">
-					前端入门
-				</div>
-				<div class="header-tag">
-					java小白入门
-				</div>
-				<i class="header-img">
+					<!--右浮动-->
+					<div class="header-tag">
+						前端入门
+					</div>
+					<div class="header-tag">
+						java小白入门
+					</div>
+					<i class="header-img">
 				<!--字体图标-->
 				</i>
 				</div>
 			</div>
-			
+
 			<div class="header-right">
 				<li>下载APP</li>
 				<li>登录购物车</li>
@@ -218,13 +293,27 @@
 				<div class="banner-content-left">
 					<ul>
 						<!--字体图标-->
-						<li><a href="index.html">前端开发</a></li>
-						<li><a href="index.html">后端开发</a></li>
-						<li><a href="index.html">移动开发</a></li>
-						<li><a href="index.html">数据库</a></li>
-						<li><a href="index.html">云计算&大数据</a></li>
-						<li><a href="index.html">运维&测试</a></li>
-						<li><a href="index.html">UI设计</a></li>
+						<li>
+							<a href="index.html">前端开发</a>
+						</li>
+						<li>
+							<a href="index.html">后端开发</a>
+						</li>
+						<li>
+							<a href="index.html">移动开发</a>
+						</li>
+						<li>
+							<a href="index.html">数据库</a>
+						</li>
+						<li>
+							<a href="index.html">云计算&大数据</a>
+						</li>
+						<li>
+							<a href="index.html">运维&测试</a>
+						</li>
+						<li>
+							<a href="index.html">UI设计</a>
+						</li>
 					</ul>
 				</div>
 				<div class="banner-content-right">
@@ -257,13 +346,27 @@
 							<p>iOS攻城狮</p>
 							<p>可能是全球最好用的系统</p>
 						</a>
-						
+
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="actualCombat">
-			
+			<h3 class="actualCombat-title">
+				<span></span>
+				<em>实</em>/
+				<em>战</em>/
+				<em>推</em>/
+				<em>荐</em>
+				<span></span>
+			</h3>
+			<div class="actualCombat-content">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</div>
 		</section>
 		<section></section>
 		<section></section>
@@ -274,4 +377,5 @@
 		<section></section>
 		<footer></footer>
 	</body>
+
 </html>
