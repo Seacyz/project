@@ -217,15 +217,32 @@
 				line-height: 16px;
 			}
 			
-			.actualCombat {
+			.garybg-top {
 				box-shadow: 0 4px 8px 0 rgba(7, 17, 27, .1);
 			}
 			
-			.actualCombat-title {
+			.items-title {
 				text-align: center;
 				font-size: 14px;
 				color: #93999F;
 				line-height: 36px;
+			}
+			
+			.items-title span {
+				display: inline-block;
+				width: 56px;
+				height: 36px;
+				background-size: 100%;
+				background-image: url(image/icon.png);
+				vertical-align: bottom;
+			}
+			
+			.items-title em {
+				margin: 0 3px;
+				font-size: 22px;
+				font-weight: 600;
+				color: #4D555D;
+				font-style: normal;
 			}
 			
 			.actualCombat-title span:nth-child(1) {
@@ -236,29 +253,13 @@
 				background-position: center -108px;
 			}
 			
-			.actualCombat-title span {
-				display: inline-block;
-				width: 56px;
-				height: 36px;
-				background-size: 100%;
-				background-image: url(image/icon.png);
-				vertical-align: bottom;
-			}
-			
-			.actualCombat-title em {
-				margin: 0 3px;
-				font-size: 22px;
-				font-weight: 600;
-				color: #4D555D;
-				font-style: normal;
-			}
-			
-			.actualCombat-content {
+			.item-content {
 				width: 1152px;
 				margin: 0 auto;
+				padding: 36px 0 48px;
 			}
 			
-			.actualCombat-tiem {
+			.item {
 				float: left;
 				display: inline-block;
 				height: 252px;
@@ -267,21 +268,21 @@
 				margin-left: 18px;
 			}
 			
-			.actualCombat-tiem:nth-child(1) {
+			.item:nth-child(1) {
 				margin-left: 0px;
 			}
 			
-			.actualCombat-itemimg {
+			.item-img {
 				width: 216px;
 				height: 120px;
 				border-radius: 8px;
 			}
 			
-			.actualCombat-item-bottom {
+			.item-bottom {
 				padding: 12px 8px;
 			}
 			
-			.actualCombat-itemtitle {
+			.itemtitle {
 				font-size: 16px;
 				color: #07111B;
 				font-weight: 400;
@@ -292,7 +293,7 @@
 				overflow: hidden;
 			}
 			
-			.actualCombat-item-bottom li {
+			.item-bottom li {
 				display: inline-block;
 				font-size: 12px;
 				color: #93999F;
@@ -302,51 +303,55 @@
 				margin-right: 12px;
 			}
 			
-			.actualCombat-item-bottom li:nth-child(4) {
+			.item-bottom li:nth-child(4) {
 				margin-right: 0px;
 			}
 			
-			.actualCombat-itemprice {
+			.item-long {
+				float: left;
+				margin-bottom: 36px;
+				margin-left: 0px;
+				border-radius: 8px;
+				text-align: center;
+				color: white;
+			}
+			
+			.item-long:nth-child(2) {
+				margin-left: 18px;
+			}
+			
+			.item-long>a {
+				display: block;
+				width: 567px;
+				height: 108px;
+				padding: 30px 0;
+				overflow: hidden;
+				box-sizing: border-box;
+			}
+			
+			.item-long h3 {
+				font-size: 20;
+				font-weight: 700;
+				letter-spacing: 2px;
+				line-height: 28px;
+			}
+			
+			.item-long p {
+				font-size: 12px;
+				margin-top: 4px;
+				line-height: 16px;
+			}
+			
+			.itemprice {
 				font-size: 12px;
 				color: #4D555D;
 				line-height: 20px;
 				margin-top: 8px;
 			}
 			
-			.newClass {
-				height: 100px;
+			.garybg {
 				box-shadow: 0 2px 4px 0 rgba(7, 17, 27, .06);
-				background-color: rgba(7, 17, 27, .03);
-			}
-			
-			.newClass-content {
-				width: 1152px;
-				margin-left: auto;
-				margin-right: auto;
-				padding: 36px 0 48px;
-			}
-			
-			.newClass-title {
-				font-size: 14px;
-				color: #71777D;
-				line-height: 36px;
-				text-align: center;
-			}
-			
-			.newClass-title em {
-				font-size: 20px;
-				font-weight: 600;
-				color: #4D555D;
-				margin: 0 3px;
-			}
-			
-			.newClass-title span {
-				display: inline-block;
-				width: 56px;
-				height: 36px;
-				background-image: url(image/icon.png);
-				background-size: 100%;
-				vertical-align: bottom;
+				background-color: rgba(7, 17, 27, .05);
 			}
 			
 			.newClass-title span:nth-child(1) {
@@ -357,16 +362,59 @@
 				background-position: center -252px;
 			}
 			
-			.newClass-itemsTop li {
-				float: left;
-				height: 252px;
-				width: 216px;
-				margin-bottom: 12px;
-				margin-left: 18px;
+			.novice-title span:nth-child(1) {
+				background-position: center -144px;
 			}
 			
-			.newClass-itemsTop li:nth-child(1) {
-				margin-left: 0px;
+			.novice-title span:nth-child(6) {
+				background-position: center -180px;
+			}
+			
+			.novice-itemlongleft {
+				background-image: url(image/itemLongleft.jpg);
+			}
+			
+			.novice-itemlongright {
+				background-image: url(image/itemLongRight.jpg);
+			}
+			
+			.skills-title span:nth-child(1) {
+				background-position: center -216px;
+			}
+			
+			.skills-title span:nth-child(6) {
+				background-position: center -252px;
+			}
+			
+			.skills-itemlongleft {
+				background-image: url(image/itemLongleft.jpg);
+			}
+			
+			.skills-itemlongright {
+				background-image: url(image/itemLongRight.jpg);
+			}
+			
+			.technology-title span:nth-child(1) {
+				background-position: center -288px;
+			}
+			
+			.technology-title span:nth-child(6) {
+				background-position: center -324px;
+			}
+			
+			.technology-itemlongleft {
+				background-image: url(image/itemLongleft.jpg);
+			}
+			
+			.technology-itemlongright {
+				background-image: url(image/itemLongRight.jpg);
+			}
+			.notes-title span:nth-child(1) {
+				background-position: center -360px;
+			}
+			
+			.notes-title span:nth-child(9) {
+				background-position: center -396px;
 			}
 		</style>
 		<title>慕课网</title>
@@ -470,8 +518,8 @@
 				</div>
 			</div>
 		</section>
-		<section class="actualCombat">
-			<h3 class="actualCombat-title">
+		<section class="actualCombat garybg-top">
+			<h3 class="items-title actualCombat-title">
 				<span></span>
 				<em>实</em>/
 				<em>战</em>/
@@ -479,77 +527,77 @@
 				<em>荐</em>
 				<span></span>
 			</h3>
-			<div class="fix actualCombat-content">
-				<li class="actualCombat-tiem">
-					<img class="actualCombat-itemimg" src="image/actualCombat1.jpg" />
-					<div class="actualCombat-item-bottom">
-						<h3 class="actualCombat-itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+			<div class="fix item-content">
+				<li class="item">
+					<img class="item-img" src="image/actualCombat1.jpg" />
+					<div class="item-bottom">
+						<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
 						<ul>
 							<li>实战</li>
 							<li>初级</li>
 							<li>2299</li>
 							<li>*****</li>
 						</ul>
-						<div class="actualCombat-itemprice">￥366.0</div>
+						<div class="itemprice">￥366.0</div>
 					</div>
 				</li>
-				<li class="actualCombat-tiem">
-					<img class="actualCombat-itemimg" src="image/actualCombat2.jpg" />
-					<div class="actualCombat-item-bottom">
-						<h3 class="actualCombat-itemtitle">Java企业级电商项目架构演进之路  Tomcat集群与Redis分布式</h3>
+				<li class="item">
+					<img class="item-img" src="image/actualCombat2.jpg" />
+					<div class="item-bottom">
+						<h3 class="itemtitle">Java企业级电商项目架构演进之路  Tomcat集群与Redis分布式</h3>
 						<ul>
 							<li>实战</li>
 							<li>初级</li>
 							<li>2299</li>
 							<li>*****</li>
 						</ul>
-						<div class="actualCombat-itemprice">￥366.0</div>
+						<div class="itemprice">￥366.0</div>
 					</div>
 				</li>
-				<li class="actualCombat-tiem">
-					<img class="actualCombat-itemimg" src="image/actualCombat3.jpg" />
-					<div class="actualCombat-item-bottom">
-						<h3 class="actualCombat-itemtitle">Java深入微服务原理改造房产销售平台</h3>
+				<li class="item">
+					<img class="item-img" src="image/actualCombat3.jpg" />
+					<div class="item-bottom">
+						<h3 class="itemtitle">Java深入微服务原理改造房产销售平台</h3>
 						<ul>
 							<li>实战</li>
 							<li>初级</li>
 							<li>2299</li>
 							<li>*****</li>
 						</ul>
-						<div class="actualCombat-itemprice">￥366.0</div>
+						<div class="itemprice">￥366.0</div>
 					</div>
 				</li>
-				<li class="actualCombat-tiem">
-					<img class="actualCombat-itemimg" src="image/actualCombat4.jpg" />
-					<div class="actualCombat-item-bottom">
-						<h3 class="actualCombat-itemtitle">前端跳槽面试必备技巧</h3>
+				<li class="item">
+					<img class="item-img" src="image/actualCombat4.jpg" />
+					<div class="item-bottom">
+						<h3 class="itemtitle">前端跳槽面试必备技巧</h3>
 						<ul>
 							<li>实战</li>
 							<li>初级</li>
 							<li>2299</li>
 							<li>*****</li>
 						</ul>
-						<div class="actualCombat-itemprice">￥366.0</div>
+						<div class="itemprice">￥366.0</div>
 					</div>
 				</li>
-				<li class="actualCombat-tiem">
-					<img class="actualCombat-itemimg" src="image/actualCombat5.jpg" />
-					<div class="actualCombat-item-bottom">
-						<h3 class="actualCombat-itemtitle">Spring Boot企业微信点餐系统</h3>
+				<li class="item">
+					<img class="item-img" src="image/actualCombat5.jpg" />
+					<div class="item-bottom">
+						<h3 class="itemtitle">Spring Boot企业微信点餐系统</h3>
 						<ul>
 							<li>实战</li>
 							<li>初级</li>
 							<li>2299</li>
 							<li>*****</li>
 						</ul>
-						<div class="actualCombat-itemprice">￥366.0</div>
+						<div class="itemprice">￥366.0</div>
 					</div>
 				</li>
 			</div>
 		</section>
-		<section class="newClass">
-			<div class="newClass-content">
-				<h3 class="newClass-title">
+		<section class="newClass garybg">
+			<div class="item-content">
+				<h3 class="items-title newClass-title">
 				<span></span>
 				<em>新</em>/
 				<em>上</em>/
@@ -558,79 +606,641 @@
 				<span></span>
 			</h3>
 				<div class="fix newClass-items">
-					<div class="newClass-itemsTop">
-						<li>
-							<img class="actualCombat-itemimg" src="image/actualCombat1.jpg" />
-							<div class="actualCombat-item-bottom">
-								<h3 class="actualCombat-itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+					<div>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
 								<ul>
 									<li>实战</li>
 									<li>初级</li>
 									<li>2299</li>
 									<li>*****</li>
 								</ul>
-								<div class="actualCombat-itemprice">￥366.0</div>
+								<div class="itemprice">￥366.0</div>
 							</div>
 						</li>
-						<li>
-							<img class="actualCombat-itemimg" src="image/actualCombat1.jpg" />
-							<div class="actualCombat-item-bottom">
-								<h3 class="actualCombat-itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
 								<ul>
 									<li>实战</li>
 									<li>初级</li>
 									<li>2299</li>
 									<li>*****</li>
 								</ul>
-								<div class="actualCombat-itemprice">￥366.0</div>
+								<div class="itemprice">￥366.0</div>
 							</div>
 						</li>
-						<li>
-							<img class="actualCombat-itemimg" src="image/actualCombat1.jpg" />
-							<div class="actualCombat-item-bottom">
-								<h3 class="actualCombat-itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
 								<ul>
 									<li>实战</li>
 									<li>初级</li>
 									<li>2299</li>
 									<li>*****</li>
 								</ul>
-								<div class="actualCombat-itemprice">￥366.0</div>
+								<div class="itemprice">￥366.0</div>
 							</div>
 						</li>
-						<li><img class="actualCombat-itemimg" src="image/actualCombat1.jpg" />
-							<div class="actualCombat-item-bottom">
-								<h3 class="actualCombat-itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
 								<ul>
 									<li>实战</li>
 									<li>初级</li>
 									<li>2299</li>
 									<li>*****</li>
 								</ul>
-								<div class="actualCombat-itemprice">￥366.0</div>
+								<div class="itemprice">￥366.0</div>
 							</div>
 						</li>
-						<li><img class="actualCombat-itemimg" src="image/actualCombat1.jpg" />
-							<div class="actualCombat-item-bottom">
-								<h3 class="actualCombat-itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
 								<ul>
 									<li>实战</li>
 									<li>初级</li>
 									<li>2299</li>
 									<li>*****</li>
 								</ul>
-								<div class="actualCombat-itemprice">￥366.0</div>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+					</div>
+					<div class="newClass-itemsbottom">
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
 							</div>
 						</li>
 					</div>
 				</div>
 			</div>
-			
+
 		</section>
-		<section></section>
-		<section></section>
-		<section></section>
-		<section></section>
+		<section class="novice garybg-top">
+			<div class="item-content">
+				<h3 class="items-title novice-title">
+				<span></span>
+				<em>新</em>/
+				<em>手</em>/
+				<em>入</em>/
+				<em>门</em>
+				<span></span>
+			    </h3>
+				<div class="fix">
+					<div class="item-long novice-itemlongleft">
+						<a>
+							<h3>火爆微信小程序开发，只有实用，没有套路！</h3>
+							<p>0门槛搭建微信小程序，大步迈入微信“小”时代</p>
+						</a>
+					</div>
+					<div class="item-long novice-itemlongright">
+						<a>
+							<h3>火爆微信小程序开发，只有实用，没有套路！</h3>
+							<p>0门槛搭建微信小程序，大步迈入微信“小”时代</p>
+						</a>
+					</div>
+					<div class="fix">
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat2.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Java企业级电商项目架构演进之路  Tomcat集群与Redis分布式</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat3.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Java深入微服务原理改造房产销售平台</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat4.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">前端跳槽面试必备技巧</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat5.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Spring Boot企业微信点餐系统</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+					</div>
+					<div class="fix">
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat2.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Java企业级电商项目架构演进之路  Tomcat集群与Redis分布式</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat3.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Java深入微服务原理改造房产销售平台</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat4.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">前端跳槽面试必备技巧</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat5.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Spring Boot企业微信点餐系统</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="skills garybg">
+			<div class="item-content">
+				<h3 class="items-title skills-title">
+				<span></span>
+				<em>技</em>/
+				<em>能</em>/
+				<em>提</em>/
+				<em>升</em>
+				<span></span>
+			    </h3>
+				<div class="fix">
+					<div class="item-long skills-itemlongleft">
+						<a>
+							<h3>火爆微信小程序开发，只有实用，没有套路！</h3>
+							<p>0门槛搭建微信小程序，大步迈入微信“小”时代</p>
+						</a>
+					</div>
+					<div class="item-long skills-itemlongright">
+						<a>
+							<h3>火爆微信小程序开发，只有实用，没有套路！</h3>
+							<p>0门槛搭建微信小程序，大步迈入微信“小”时代</p>
+						</a>
+					</div>
+					<div class="fix">
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat2.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Java企业级电商项目架构演进之路  Tomcat集群与Redis分布式</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat3.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Java深入微服务原理改造房产销售平台</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat4.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">前端跳槽面试必备技巧</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat5.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Spring Boot企业微信点餐系统</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+					</div>
+					<div class="fix">
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat2.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Java企业级电商项目架构演进之路  Tomcat集群与Redis分布式</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat3.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Java深入微服务原理改造房产销售平台</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat4.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">前端跳槽面试必备技巧</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat5.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Spring Boot企业微信点餐系统</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="technology garybg-top">
+			<div class="item-content">
+				<h3 class="items-title technology-title">
+				<span></span>
+				<em>前</em>/
+				<em>沿</em>/
+				<em>技</em>/
+				<em>术</em>
+				<span></span>
+			    </h3>
+				<div class="fix">
+					<div class="item-long technology-itemlongleft">
+						<a>
+							<h3>火爆微信小程序开发，只有实用，没有套路！</h3>
+							<p>0门槛搭建微信小程序，大步迈入微信“小”时代</p>
+						</a>
+					</div>
+					<div class="item-long technology-itemlongright">
+						<a>
+							<h3>火爆微信小程序开发，只有实用，没有套路！</h3>
+							<p>0门槛搭建微信小程序，大步迈入微信“小”时代</p>
+						</a>
+					</div>
+					<div class="fix">
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat2.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Java企业级电商项目架构演进之路  Tomcat集群与Redis分布式</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat3.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Java深入微服务原理改造房产销售平台</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat4.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">前端跳槽面试必备技巧</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat5.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Spring Boot企业微信点餐系统</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+					</div>
+					<div class="fix">
+						<li class="item">
+							<img class="item-img" src="image/actualCombat1.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">全网最热Python3入门+进阶 更快上手实际开发</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat2.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Java企业级电商项目架构演进之路  Tomcat集群与Redis分布式</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat3.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Java深入微服务原理改造房产销售平台</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat4.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">前端跳槽面试必备技巧</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+						<li class="item">
+							<img class="item-img" src="image/actualCombat5.jpg" />
+							<div class="item-bottom">
+								<h3 class="itemtitle">Spring Boot企业微信点餐系统</h3>
+								<ul>
+									<li>实战</li>
+									<li>初级</li>
+									<li>2299</li>
+									<li>*****</li>
+								</ul>
+								<div class="itemprice">￥366.0</div>
+							</div>
+						</li>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="notes">
+			<div class="item-content">
+				<h3 class="items-title notes-title">
+					<span></span>
+					<em>精</em>/
+					<em>彩</em>/
+					<em>手</em>/
+					<em>记</em>/
+					<em>及</em>/
+					<em>猿</em>/
+					<em>问</em>
+					<span></span>
+				</h3>
+				<!--瀑布布局-->
+				<!--TODO-->
+			</div>
+		</section>
 		<section></section>
 		<section></section>
 		<footer></footer>
