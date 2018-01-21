@@ -228,7 +228,7 @@
 				line-height: 36px;
 			}
 			
-			.items-title span {
+			.items-title>span {
 				display: inline-block;
 				width: 56px;
 				height: 36px;
@@ -490,6 +490,54 @@
 				right: 10px;
 				font-size: 12px;
 				color: #93999F;
+			}
+			.star-title span:nth-child(1) {
+				background-position: center -504px;
+			}
+			
+			.star-title span:nth-child(8) {
+				background-position: center -540px;
+			}
+			.star-item{
+				padding: 36px 0 48px;
+				font-size: 0px;
+			}
+			.item-star{
+				display: inline-block;
+				width: 136px;
+				height: 98px;
+				background-color: red;
+			}
+			.item-head{
+				position: relative;
+				font-size: 0;
+				line-height: ;
+			}
+			.item-head img{
+				display: block;
+				width: 56px;
+				height: 56px;
+				border-radius: 28px;
+				margin: 0 auto;
+			}
+			.item-name{
+				margin-top: 8px;
+				line-height: 16px;
+				font-size: 14px;
+				color: #07111B;
+			}
+			.item-tip{
+				line-height: 18px;
+				font-size: 12px;
+				color: #93999F;
+			}
+			.item-king{
+				position: absolute;
+				width: 26px;
+				height: 18px;
+				left: 16px;
+				background: url(image/champion.png) no-repeat;
+				background-size: 100%;
 			}
 		</style>
 		<title>慕课网</title>
@@ -1372,7 +1420,35 @@
 			</div>
 		</section>
 		<section class="star garybg-top">
-			
+			<div class="item-content">
+				<h3 class="items-title star-title">
+					<span></span>
+					<em>吊</em>/
+					<em>炸</em>/
+					<em>天</em>/
+					<em>全</em>/
+					<em>明</em>/
+					<em>星</em>
+					<span></span>
+				</h3>
+				<div class="fix star-item items-title">
+					<a href="" class="item-star">
+						<div class="item-head">
+						<span class="item-king">hah</span>
+						<img src="//img2.mukewang.com/566f7dd600019fdf06000608-100-100.jpg"/>
+						</div>
+						<p class="item-name">geekly</p>
+						<p class="item-tip">风骚课程学霸</p>
+					</a>
+					<a href="" class="item-star">
+					</a>
+					<a href="" class="item-star">
+						
+					</a>
+					<a href="" class="item-star">
+					</a>
+				</div>
+			</div>
 		</section>
 		<footer></footer>
 	</body>
