@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="../style/bass.css" />
-		<title></title>
+		<link rel="stylesheet" href="../style/pathitem.css" />
+		<style type="text/css">
+			.job-banner{
+				position: relative;
+				width: 100%;
+				height: 220px;
+				background:url(image/jobbanner.jpg) no-repeat;
+				background-size: 100%;
+				margin: 0 auto;
+			}
+			.job-banner-content{
+				height: 100%;
+				width: 100%;
+				background-color:rgba(0,0,0,.1) ;
+			}
+			.job-banner-tilte{
+				padding-top: 50px;
+				text-align: center;
+				font-size: 14px;
+				color: rgba(255,255,255,.6);
+			}
+			.job-banner-content img{
+				margin-bottom: 10px;
+			}
+			.job-banner-tilte em{
+				line-height: 20px;
+				text-shadow: 0 4px 8px rgba(7, 17, 27, 0.4);
+				margin:0 5px ;
+				font-weight: 900;
+			}
+			.job-banner-buttons{
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.job-banner-buttons a{
+				display: inline-block;
+				height: 50px;
+				width: 140px;
+				/*background-color: #FFFFFF;*/
+				margin: 0 12px;
+				line-height: 50px;
+				padding: 0 5px;
+				color: #FFFFFF;
+				font-size: 16px;
+				font-weight: 500;
+				text-shadow: 0 4px 8px rgba(7, 17, 27, 0.4);
+			}
+			.job-banner-buttons a:hover{
+				border-radius: 12px 12px 0 0;
+				background-color: rgba(255,255,255,.3);
+			}
+			.job-banner-button-choose{
+				background-color: #FFFFFF;
+				color: #07111B !important;
+				text-shadow:0 0 0 !important;
+				border-radius: 12px 12px 0 0;
+			}
+			.job-banner-button-choose:hover{
+				background-color: #FFFFFF !important;
+			}
+			.job-items{
+				padding-bottom: 80px;
+			}
+			
+		</style>
+		<title>职业路径</title>
 	</head>
 
 	<body>
@@ -17,9 +84,9 @@
 					<a href="../course/list.html">免费课程</a>
 				</li>
 				<li>
-					<a href="">职业路径</a><i class="newtip"></i></li>
+					<a class="headerchoose" href="">职业路径</a><i class="newtip"></i></li>
 				<li>
-					<a class="headerchoose" href="">实站</a>
+					<a  href="../class/careerpath.html">实站</a>
 				</li>
 				<li>
 					<a href="">猿问</a>
@@ -51,6 +118,180 @@
 				<li>注册</li>
 			</div>
 		</header>
+		<section class="job-banner">
+			<!--TODO svg图背景-->
+			<div class="job-banner-content">
+				<div class="job-banner-tilte">
+					<img src="https://class.imooc.com/static/module/index/img/banner-txt.svg" />
+					<div>
+						<em>课程体系化</em>/
+						<em>问答作业1V1</em>/
+						<em>学练测一体</em>/
+						<em>视频不限期</em>/
+						<em>服务随开随用</em>
+					</div>
+				</div>
+			</div>
+			
+			<div class="job-banner-buttons">
+					<a href="" class="job-banner-button-choose">全部</a>
+					<a href="">web前端攻城狮</a>
+					<a href="">java攻城狮</a>
+					<a href="">android攻城狮</a>
+					<a href="">php攻城狮</a>
+					<a href="">ios/c++攻城狮</a>
+			</div>
+		</section>
+		<section class="job-items item-content">
+			<div class="path-items">
+					<a href="" class="path-item">
+						<div class="path-img">
+						</div>
+						<div class="path-item-content">
+							<h3>从天气项目看Spring Cloud微服务治理</h3>
+							<div class="path-item-grade">
+								<span>中级</span>
+								<i></i>
+								<span>10</span>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+							</div>
+							<p>CSS是前端的看家本领之一 ，从实际工作需求角度出发带你吃透CSS知识体系！</p>
+							<span>￥149.0</span>
+						</div>
+					</a>
+					<a href="" class="path-item">
+						<div class="path-img">
+						</div>
+						<div class="path-item-content">
+							<h3>从天气项目看Spring Cloud微服务治理</h3>
+							<div class="path-item-grade">
+								<span>中级</span>
+								<i></i>
+								<span>10</span>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+							</div>
+							<p>CSS是前端的看家本领之一 ，从实际工作需求角度出发带你吃透CSS知识体系！</p>
+							<span>￥149.0</span>
+						</div>
+					</a>
+					<a href="" class="path-item">
+						<div class="path-img">
+						</div>
+						<div class="path-item-content">
+							<h3>从天气项目看Spring Cloud微服务治理</h3>
+							<div class="path-item-grade">
+								<span>中级</span>
+								<i></i>
+								<span>10</span>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+							</div>
+							<p>CSS是前端的看家本领之一 ，从实际工作需求角度出发带你吃透CSS知识体系！</p>
+							<span>￥149.0</span>
+						</div>
+					</a>
+					<a href="" class="path-item">
+						<div class="path-img">
+						</div>
+						<div class="path-item-content">
+							<h3>从天气项目看Spring Cloud微服务治理</h3>
+							<div class="path-item-grade">
+								<span>中级</span>
+								<i></i>
+								<span>10</span>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+							</div>
+							<p>CSS是前端的看家本领之一 ，从实际工作需求角度出发带你吃透CSS知识体系！</p>
+							<span>￥149.0</span>
+						</div>
+					</a>
+					<a href="" class="path-item">
+						<div class="path-img">
+						</div>
+						<div class="path-item-content">
+							<h3>从天气项目看Spring Cloud微服务治理</h3>
+							<div class="path-item-grade">
+								<span>中级</span>
+								<i></i>
+								<span>10</span>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+							</div>
+							<p>CSS是前端的看家本领之一 ，从实际工作需求角度出发带你吃透CSS知识体系！</p>
+							<span>￥149.0</span>
+						</div>
+					</a>
+					<a href="" class="path-item">
+						<div class="path-img">
+						</div>
+						<div class="path-item-content">
+							<h3>从天气项目看Spring Cloud微服务治理</h3>
+							<div class="path-item-grade">
+								<span>中级</span>
+								<i></i>
+								<span>10</span>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+							</div>
+							<p>CSS是前端的看家本领之一 ，从实际工作需求角度出发带你吃透CSS知识体系！</p>
+							<span>￥149.0</span>
+						</div>
+					</a>
+					<a href="" class="path-item">
+						<div class="path-img">
+						</div>
+						<div class="path-item-content">
+							<h3>从天气项目看Spring Cloud微服务治理</h3>
+							<div class="path-item-grade">
+								<span>中级</span>
+								<i></i>
+								<span>10</span>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+							</div>
+							<p>CSS是前端的看家本领之一 ，从实际工作需求角度出发带你吃透CSS知识体系！</p>
+							<span>￥149.0</span>
+						</div>
+					</a>
+				</div>
+				<div class="path-paging item-pagingfooter">
+					<span>首页</span>
+					<span>上一页</span>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>下一页</li>
+					<li>尾页</li>
+				</div>
+		</section>
 		<footer class="fix footer-bggray">
 			<div class="footer-content">
 				<a>企业合作</a>
@@ -74,7 +315,7 @@
 				</div>
 			</div>
 		</footer>
-		<!--	<section class="right">
+			<section class="right">
 			<a href="">
 				<span>意见反馈</span>
 			</a>
@@ -90,7 +331,7 @@
 			<a href="">
 				<span>返回顶部</span>
 			</a>
-		</section>-->
+		</section>
 	</body>
 
 </html>
