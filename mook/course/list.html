@@ -160,17 +160,7 @@
 				height: 44px;
 			}
 			
-			.course-item-pagingfooter {
-				text-align: center;
-				padding-bottom: 25px;
-				overflow: hidden;
-				clear: both;
-				font-size: 14px;
-			}
-			
-			.course-item-pagingfooter li {
-				display: inline-block;
-			}
+		
 		</style>
 		<title>免费课程</title>
 	</head>
@@ -179,15 +169,15 @@
 		<header class="header headergray">
 			<!--这个图片存在时候，如果不浮动，会影响下面的布局-->
 			<!--TODO-->
-			<a class="logo"></a>
+			<a href="../index.html" class="logo"></a>
 			<ul>
 				<li>
-					<a href="list.html">免费课程</a>
+					<a class="headerchoose" href="list.html">免费课程</a>
 				</li>
 				<li>
 					<a href="">职业路径</a><i class="newtip"></i></li>
 				<li>
-					<a href="">实站</a>
+					<a href="../class/careerpath.html">实站</a>
 				</li>
 				<li>
 					<a href="">猿问</a>
@@ -222,7 +212,7 @@
 		<section>
 			<div class="fix content">
 				<div class="fix label">
-					<div class="label-title left">方向：</div>
+					<div class="label-title leftfloat">方向：</div>
 					<dl class="label-list">
 						<dd>
 							<a href="" class="label-choose">全部</a>
@@ -239,7 +229,7 @@
 					</dl>
 				</div>
 				<div class="fix label">
-					<span class="label-title left">分类：</span>
+					<span class="label-title leftfloat">分类：</span>
 					<dl class="label-list">
 						<dd>
 							<a href="" class="label-choose">全部</a>
@@ -283,7 +273,7 @@
 					</dl>
 				</div>
 				<div class="fix label">
-					<div class="label-title left">类型：</div>
+					<div class="label-title leftfloat">类型：</div>
 					<dl class="label-list">
 						<dd>
 							<a href="" class="label-choose">全部</a>
@@ -460,7 +450,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="course-item-pagingfooter">
+				<div class="item-pagingfooter">
 					<span>首页</span>
 					<span>上一页</span>
 					<li>1</li>

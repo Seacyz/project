@@ -1,16 +1,188 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="../style/bass.css" />
 		<style type="text/css">
-			.pathtopadv a{
+			body{
+				height: 100%;
+				width: 100%;
+			}
+			.pathtopadv {
+				padding: 23px 0;
+				position: relative;
+			}
+			
+			.pathtopadv a {
 				display: inline-block;
-                width: 567px;
-                height: 108px;
-                background-color: red;
-                background: ;
+				width: 567px;
+				height: 108px;
+				border-radius: 8px;
+				margin-bottom: 100px;
+			}
+			
+			.pathlabel {
+				background-color: white;
+				margin-bottom: 30px;
+			}
+			
+			.pathlabel-content {
+				width: 100%;
+				float: left;
+				margin-top: -140px;
+			}
+			
+			.pathlabel-title-content {
+				padding: 32px 32px 20px 32px;
+				background: #fff;
+				border-radius: 8px;
+				box-shadow: 0px 8px 16px rgba(7, 17, 27, 0.1);
+				box-sizing: border-box;
+			}
+			
+			.pathlabel-title {
+				text-align: center;
+			}
+			
+			.pathlabel-title a {
+				display: inline-block;
+				border-top-left-radius: 8px;
+				border-top-right-radius: 8px;
+				line-height: 52px;
+				padding: 0 24px;
+				font-size: 16px;
+				color: #4D555D;
+				font-weight: bold;
+			}
+			
+			.pathlabel-title-choose {
+				background-color: #fff;
+				color: #F01414 !important;
+			}
+			
+			.pathlabel-title-content a {
+				font-size: 14px;
+				display: inline-block;
+				line-height: 32px;
+				margin-right: 12px;
+				margin-bottom: 12px;
+				padding: 0 12px;
+				color: #14191e;
+			}
+			
+			.pathlabel-title-content-choose {
+				background: #F01414;
+				border-radius: 2px;
+				color: #fff !important;
+			}
+			
+			.pathlabel-screen {
+				padding: 28px 0 23px;
+			}
+			
+			.pathlabel-screen a {
+				padding: 11px;
+				color: #93999f;
+				font-size: 14px;
+				font-weight: 200;
+				line-height: 48px;
+			}
+			
+			.pathlabel-screen-choose {
+				color: #F01414 !important;
+				border-bottom: 2px solid #F01414;
+			}
+			
+			.path-item {
+				display: inline-block;
+				margin:0 4px;
+			}
+			.path-item:nth-child(4n){
+				margin-right: 0px;
+			}
+			.path-item:nth-child(4n+1){
+				margin-left: 0px;
+			}
+			
+			.path-img {
+				position: relative;
+				height: 148px;
+				max-height: 148px;
+				width: 270px;
+				background: url(image/pathlabel-itemimg.jpg) no-repeat;
+				border-radius: 8px;
+			}
+			
+			.path-img i {
+				display: block;
+				position: absolute;
+				top: -8px;
+				left: -8px;
+				background-image: linear-gradient(-90deg, #f68688 0%, #f02930 100%);
+				border: 2px solid #fff;
+				border-radius: 12px;
+				font-size: 12px;
+				padding: 0 4px;
+				line-height: 20px;
+			}
+			
+			.path-item-content {
+				position: relative;
+				width: 248px;
+				padding: 0 12px;
+				min-height: 112px;
+				margin: 14px 2px;
+			}
+			
+			.path-item-content h3 {
+				font-size: 16px;
+				line-height: 24px;
+				font-weight: 200;
+				max-height: 48px;
+				margin-top: 16px;
+				color: #14191e;
+				word-break: break-all;
+				word-wrap: break-word;
+				overflow: hidden;
+				text-overflow: -o-ellipsis-lastline;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+			}
+			
+			.path-item-grade {
+				font-size: 12px;
+				line-height: 20px;
+				color: #93999f;
+				font-weight: 200;
+			}
+			
+			.path-item-content p {
+				margin-top: 4px;
+				font-size: 12px;
+				color: #93999f;
+				font-weight: 200;
+				max-height: 48px;
+				line-height: 24px;
+				word-break: break-all;
+				word-wrap: break-word;
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+			}
+			
+			.path-item-content>span {
+				font-size: 12px;
+				color: #4D555D;
+				line-height: 20px;
+				margin-top: 8px;
+			}
+			.path-paging{
+				position: absolute;
+				width: 1152px;
+				text-align: center;
+				padding: 20px 0;
 			}
 		</style>
 		<title>实战</title>
@@ -20,15 +192,15 @@
 		<header class="header headergray">
 			<!--这个图片存在时候，如果不浮动，会影响下面的布局-->
 			<!--TODO-->
-			<a class="logo"></a>
+			<a href="../index.html" class="logo"></a>
 			<ul>
 				<li>
-					<a href="list.html">免费课程</a>
+					<a href="../course/list.html">免费课程</a>
 				</li>
 				<li>
 					<a href="">职业路径</a><i class="newtip"></i></li>
 				<li>
-					<a href="">实站</a>
+					<a class="headerchoose" href="">实站</a>
 				</li>
 				<li>
 					<a href="">猿问</a>
@@ -60,12 +232,212 @@
 				<li>注册</li>
 			</div>
 		</header>
-		<section class="item-content pathtopadv">
-			<a href=""></a>
-			<a href=""></a>
+		<section class="garybg">
+			<div class="item-content pathtopadv fix">
+				<a href="" style="background-image: url(image/pathtopadv1.jpg);"></a>
+				<a href="" class="rightfloat" style="background-image: url(image/pathtopadv2.jpg);"></a>
+			</div>
 		</section>
-		
-		<section></section>
+		<section class="pathlabel">
+			<div class="pathlabel-content">
+				<div class="item-content">
+				<div class="pathlabel-title">
+					<a href="" class="pathlabel-title-choose">全部</a>
+					<a href="">前端开发</a>
+					<a href="">后端开发</a>
+					<a href="">移动开发</a>
+					<a href="">云计算&大数据</a>
+					<a href="">运维&测试</a>
+					<a href="">UI设计</a>
+					<a href="">人工智能</a>
+				</div>
+				<div class="pathlabel-title-content">
+					<a href="" class="pathlabel-title-content-choose">全部</a>
+					<a href="">全部</a>
+					<a href="">html/css</a>
+					<a href="">javascript</a>
+					<a href="">html5</a>
+					<a href="">css3</a>
+					<a href="">jquery</a>
+					<a href="">node.js</a>
+					<a href="">angular</a>
+					<a href="">react.js</a>
+					<a href="">vue.js</a>
+					<a href="">webapp</a>
+					<a href="">前端工具</a>
+					<a href="">thinkPHP</a>
+					<a href="">PHP</a>
+					<a href="">yii</a>
+					<a href="">java</a>
+					<a href="">SpringBoot</a>
+				</div>
+				</div>
+			</div>
+			<div class="item-content">
+				
+				<div class="pathlabel-screen">
+					<a href="" class="pathlabel-screen-choose">默认排序</a>
+					<a href="">最新</a>
+					<a href="">销量</a>
+					<a href="">评价数</a>
+				</div>
+				<div class="path-items">
+					<a href="" class="path-item">
+						<div class="path-img">
+							<i>NEM</i>
+						</div>
+						<div class="path-item-content">
+							<h3>从天气项目看Spring Cloud微服务治理</h3>
+							<div class="path-item-grade">
+								<span>中级</span>
+								<i></i>
+								<span>10</span>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+							</div>
+							<p>CSS是前端的看家本领之一 ，从实际工作需求角度出发带你吃透CSS知识体系！</p>
+							<span>￥149.0</span>
+						</div>
+					</a>
+					<a href="" class="path-item">
+						<div class="path-img">
+							<i>NEM</i>
+						</div>
+						<div class="path-item-content">
+							<h3>从天气项目看Spring Cloud微服务治理</h3>
+							<div class="path-item-grade">
+								<span>中级</span>
+								<i></i>
+								<span>10</span>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+							</div>
+							<p>CSS是前端的看家本领之一 ，从实际工作需求角度出发带你吃透CSS知识体系！</p>
+							<span>￥149.0</span>
+						</div>
+					</a>
+					<a href="" class="path-item">
+						<div class="path-img">
+							<i>NEM</i>
+						</div>
+						<div class="path-item-content">
+							<h3>从天气项目看Spring Cloud微服务治理</h3>
+							<div class="path-item-grade">
+								<span>中级</span>
+								<i></i>
+								<span>10</span>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+							</div>
+							<p>CSS是前端的看家本领之一 ，从实际工作需求角度出发带你吃透CSS知识体系！</p>
+							<span>￥149.0</span>
+						</div>
+					</a>
+					<a href="" class="path-item">
+						<div class="path-img">
+							<i>NEM</i>
+						</div>
+						<div class="path-item-content">
+							<h3>从天气项目看Spring Cloud微服务治理</h3>
+							<div class="path-item-grade">
+								<span>中级</span>
+								<i></i>
+								<span>10</span>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+							</div>
+							<p>CSS是前端的看家本领之一 ，从实际工作需求角度出发带你吃透CSS知识体系！</p>
+							<span>￥149.0</span>
+						</div>
+					</a>
+					<a href="" class="path-item">
+						<div class="path-img">
+							<i>NEM</i>
+						</div>
+						<div class="path-item-content">
+							<h3>从天气项目看Spring Cloud微服务治理</h3>
+							<div class="path-item-grade">
+								<span>中级</span>
+								<i></i>
+								<span>10</span>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+							</div>
+							<p>CSS是前端的看家本领之一 ，从实际工作需求角度出发带你吃透CSS知识体系！</p>
+							<span>￥149.0</span>
+						</div>
+					</a>
+					<a href="" class="path-item">
+						<div class="path-img">
+							<i>NEM</i>
+						</div>
+						<div class="path-item-content">
+							<h3>从天气项目看Spring Cloud微服务治理</h3>
+							<div class="path-item-grade">
+								<span>中级</span>
+								<i></i>
+								<span>10</span>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+							</div>
+							<p>CSS是前端的看家本领之一 ，从实际工作需求角度出发带你吃透CSS知识体系！</p>
+							<span>￥149.0</span>
+						</div>
+					</a>
+					<a href="" class="path-item">
+						<div class="path-img">
+							<i>NEM</i>
+						</div>
+						<div class="path-item-content">
+							<h3>从天气项目看Spring Cloud微服务治理</h3>
+							<div class="path-item-grade">
+								<span>中级</span>
+								<i></i>
+								<span>10</span>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+								<i>*</i>
+							</div>
+							<p>CSS是前端的看家本领之一 ，从实际工作需求角度出发带你吃透CSS知识体系！</p>
+							<span>￥149.0</span>
+						</div>
+					</a>
+				</div>
+				<div class="path-paging item-pagingfooter">
+					<span>首页</span>
+					<span>上一页</span>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>下一页</li>
+					<li>尾页</li>
+				</div>
+			</div>
+		</section>
 		<footer class="fix footer-bggray">
 			<div class="footer-content">
 				<a>企业合作</a>
@@ -89,7 +461,7 @@
 				</div>
 			</div>
 		</footer>
-		<!--<section class="right">
+		<section class="right">
 			<a href="">
 				<span>意见反馈</span>
 			</a>
@@ -105,7 +477,7 @@
 			<a href="">
 				<span>返回顶部</span>
 			</a>
-		</section>-->
+		</section>
 	</body>
 
 </html>

@@ -14,11 +14,11 @@ body {
 	font: "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
 }
 
-.left {
+.leftfloat {
 	float: left;
 }
 
-.right {
+.rightfloat {
 	float: right;
 }
 
@@ -55,8 +55,8 @@ body {
 	background: url(../course/image/logo.png) center center no-repeat;
 }
 
-.headergray li:nth-child(1) a {
-	color: #FFFFFF;
+.headerchoose{
+	color: #FFFFFF !important;
 }
 
 .headergray li a:hover {
@@ -468,3 +468,14 @@ footer {
 	font-size: 12px;
 	color: #07111B;
 }
+	.item-pagingfooter {
+				text-align: center;
+				padding-bottom: 25px;
+				overflow: hidden;
+				clear: both;
+				font-size: 14px;
+			}
+			
+			.item-pagingfooter li {
+				display: inline-block;
+			}
