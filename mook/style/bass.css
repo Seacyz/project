@@ -13,12 +13,15 @@ body {
 	min-width: 1300px;
 	font: "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
 }
-.left{
+
+.left {
 	float: left;
 }
-.right{
+
+.right {
 	float: right;
 }
+
 .fix {
 	zoom: 1;
 }
@@ -31,7 +34,7 @@ body {
 	visibility: hidden;
 }
 
-header {
+.header {
 	z-index: 999;
 	position: relative;
 	height: 72px;
@@ -41,12 +44,31 @@ header {
 	color: #71777d;
 }
 
-header img {
+.headergray {
+	background-color: #07111B;
+}
+
+.logo {
+	float: left;
+	width: 125px;
+	height: 72px;
+	background: url(../course/image/logo.png) center center no-repeat;
+}
+
+.headergray li:nth-child(1) a {
+	color: #FFFFFF;
+}
+
+.headergray li a:hover {
+	color: #FFFFFF;
+}
+
+.header img {
 	height: 72px;
 	float: left;
 }
 
-header ul {
+.header ul {
 	position: relative;
 	display: inline-block;
 	height: 72px;
@@ -54,13 +76,13 @@ header ul {
 	margin-left: 20px;
 }
 
-header li {
+.header li {
 	display: inline-block;
 	margin: 0 20px;
 	font-size: 16px;
 }
 
-header li a {
+.header li a {
 	font-size: 16px;
 	color: #71777d;
 }
@@ -379,9 +401,18 @@ header li a:hover {
 	border: 1px solid #D9DDE1;
 }
 
+footer {
+	font-size: 0;
+}
+
 .footer-content {
 	position: relative;
+	bottom: 100;
 	color: #93999F;
+	width: 1152px;
+	margin: 0 auto;
+	padding: 20px 0px;
+	height: 100%;
 }
 
 .footer-content a {
@@ -409,7 +440,9 @@ header li a:hover {
 }
 
 .footer-content i {}
-
+.footer-bggray{
+	background-color: #07111B ;
+}
 .right {
 	z-index: 998;
 	position: fixed;
