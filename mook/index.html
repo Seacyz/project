@@ -31,24 +31,37 @@
 			
 			.banner-content-left ul {
 				display: block;
-				margin-left: 20px;
-				margin-top: 10px;
+				margin-left: 10px;
+				margin-top: 15px;
 			}
 			
 			.banner-content-left li {
+				overflow: hidden;
+				position: relative;
 				height: 60px;
 				line-height: 60px;
-				padding: 0 10px 0 10px;
 			}
 			
 			.banner-content-left li a {
 				display: inline-block;
 				height: 60px;
 				width: 100%;
-				cursor: default;
 				color: rgba(255, 255, 255, .7);
+				padding-left: 20px;
+				border-radius: 4px 0 0 4px;
 			}
-			
+			.banner-content-left li a:hover{
+				background-color: rgba(255,255,255,.4);
+			}
+			/*TODO */
+			.banner-chevron-right{
+				position: absolute;
+				right: 35px;
+				top: 22px;
+				z-index: 2;
+				color: rgba(255, 255, 255, .7);
+				font-size: 12px;
+			}
 			.banner-content-right {
 				float: right;
 				width: 936px;
@@ -92,7 +105,7 @@
 			.banner-ios {
 				background-position: center -144px !important;
 			}
-			
+		
 			.banner-content-right-bottom i:nth-child(1) {
 				background: url(image/path_new.png) no-repeat;
 				display: inline-block;
@@ -124,7 +137,7 @@
 			.actualCombat-title span:nth-child(6) {
 				background-position: center -108px;
 			}
-			/*TODO */
+		
 			
 			.newClass-title span:nth-child(1) {
 				background-position: center -216px;
@@ -241,7 +254,7 @@
 	<body>
 		<header class="header">
 			<!--这个图片存在时候，如果不浮动，会影响下面的布局-->
-			<!--TODO-->
+			
 			<img src="image/logo_new.png" />
 			<ul>
 				<li>
@@ -328,27 +341,35 @@
 						<!--字体图标-->
 						<li>
 							<a href="index.html">前端开发</a>
+							<i class="banner-chevron-right fa fa-chevron-right"></i>
 						</li>
 						<li>
 							<a href="index.html">后端开发</a>
+							<i class="banner-chevron-right fa fa-chevron-right"></i>
 						</li>
 						<li>
 							<a href="index.html">移动开发</a>
+							<i class="banner-chevron-right fa fa-chevron-right"></i>
 						</li>
 						<li>
 							<a href="index.html">数据库</a>
+							<i class="banner-chevron-right fa fa-chevron-right"></i>
 						</li>
 						<li>
 							<a href="index.html">云计算&大数据</a>
+							<i class="banner-chevron-right fa fa-chevron-right"></i>
 						</li>
 						<li>
 							<a href="index.html">运维&测试</a>
+							<i class="banner-chevron-right fa fa-chevron-right"></i>
 						</li>
 						<li>
 							<a href="index.html">UI设计</a>
+							<i class="banner-chevron-right fa fa-chevron-right"></i>
 						</li>
 					</ul>
 				</div>
+				<!--TODO-->
 				<div class="banner-content-right">
 					<div class="banner-content-right-banner">
 						<img src="image/banner.jpg" />

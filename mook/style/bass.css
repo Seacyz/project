@@ -99,6 +99,7 @@ header li a:hover {
 	border-bottom: 1px solid #D9DDE1;
 	line-height: 48px;
 	margin-top: 12px;
+	padding: 0 10px;
 }
 
 .header-search-center {
