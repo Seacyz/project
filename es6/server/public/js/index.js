@@ -77,5 +77,13 @@ module.exports = __webpack_require__(1);
 "use strict";
 
 
+__webpack_require__(2);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: SyntaxError: D:/liubeixi/project/es6/app/js/class/lesson1.js: \"message\" is read-only\n\n\u001b[0m \u001b[90m 185 | \u001b[39m\u001b[90m//const MAX = 5;\u001b[39m\n \u001b[90m 186 | \u001b[39m\u001b[90m//}\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 187 | \u001b[39m\u001b[36mvar\u001b[39m message \u001b[33m=\u001b[39m \u001b[32m\"Hello!\"\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m     | \u001b[39m    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 188 | \u001b[39m\u001b[90m//let age = 25;\u001b[39m\n \u001b[90m 189 | \u001b[39m\n \u001b[90m 190 | \u001b[39m\u001b[90m// 以下两行都会报错\u001b[39m\u001b[0m\n");
+
 /***/ })
 /******/ ]);
