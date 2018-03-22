@@ -32,14 +32,19 @@ let x2;
 let arr = [1, 2, 3];
 let {0 : first, [arr.length - 1] : last} = arr;
 //
-let [a, b, c, d, e] = 'hello';
-console.log(a);
-
+//let [a, b, c, d, e] = 'hello';//babel转码不行，因为string在es5中不继承迭代接口
+//console.log(a);
+//
 let {length : len} = 'hello';//len=5
 
 let {toString: s1} = 123;
 if(s1 === Number.prototype.toString){
 	console.log(1);
 }
-//let { prop: x } = undefined;
+let {toString: s2} = true;
+if(s2 === Boolean.prototype.toString){
+	console.log(1);
+}
+//let { prop: x3 } = undefined;
+
 
