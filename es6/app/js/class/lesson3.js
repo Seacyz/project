@@ -48,3 +48,9 @@ if(s2 === Boolean.prototype.toString){
 //let { prop: x3 } = undefined;
 
 
+function move({x = 0, y = 0} = {}) {
+  return [x, y];
+}
+function move({x, y} = { x: 0, y: 0 }) {
+  return [x, y];
+}

@@ -157,5 +157,23 @@ if (s2 === Boolean.prototype.toString) {
 }
 //let { prop: x3 } = undefined;
 
+
+function move() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$x = _ref.x,
+      x = _ref$x === undefined ? 0 : _ref$x,
+      _ref$y = _ref.y,
+      y = _ref$y === undefined ? 0 : _ref$y;
+
+  return [x, y];
+}
+function move() {
+  var _ref2 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { x: 0, y: 0 },
+      x = _ref2.x,
+      y = _ref2.y;
+
+  return [x, y];
+}
+
 /***/ })
 /******/ ]);
